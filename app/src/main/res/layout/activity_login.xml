@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/idImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inmersoft" />
+
+    <TextView
+        android:id="@+id/idUsuario"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idImagen"
+        android:text="Usuario"/>
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idUsuario" />
+
+    <TextView
+        android:id="@+id/idPassword"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="Password"
+        android:layout_below="@+id/etUser" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/idPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:onClick="ingresar"
+        android:text="Login" />
+
+
+</RelativeLayout>

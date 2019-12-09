@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inmersoft"/>
+    <TextView
+        android:id="@+id/idUsuario"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:text=""/>
+    <TextView
+        android:id="@+id/idEstudiante"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:text="Estudiante"/>
+    <TextView
+        android:id="@+id/pregunta1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Porque eligio este centro educativo?"/>
+    <EditText
+        android:id="@+id/txtRespuesta1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""/>
+    <TextView
+        android:id="@+id/pregunta2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Que deportes practica?"/>
+    <CheckBox
+        android:id="@+id/chkOpcion1"
+        android:text="Futbol"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <CheckBox
+        android:id="@+id/chkOpcion2"
+        android:text="Basquet"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <CheckBox
+        android:id="@+id/chkOpcion3"
+        android:text="Natacion"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/pregunta3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Esta interesado en aprender otro idioma aparte del Ingles?"/>
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+        android:id="@+id/rdBtnA"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="SI" />
+        <RadioButton
+        android:id="@+id/rdBtnB"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="NO" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnContestar"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:onClick="pasarDatos"
+        android:text="Preguntar" />
+</LinearLayout>
